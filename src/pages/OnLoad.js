@@ -1,5 +1,5 @@
 import React from "react";
-import { Navigation } from "../../components/Nav/Nav";
+import { useDispatch } from "react-redux";
 
 const container = {
   height: "100vh",
@@ -9,11 +9,13 @@ const container = {
   alignItems: "center",
 };
 
-export const Home = () => {
+export const OnLoad = () => {
+  const dispatch = useDispatch();
+
   return (
     <div style={container}>
-      <Navigation />
-      <h1>Home Page</h1>
+      <h1>Auth Page</h1>
+      <button onClick={() => dispatch({ type: "SIGN_IN" })}>Enter Site</button>
     </div>
   );
 };

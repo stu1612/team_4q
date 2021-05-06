@@ -1,6 +1,4 @@
 import React from "react";
-import {useDispatch} from 'react-redux'
-
 
 const container = {
   height: "100vh",
@@ -10,13 +8,10 @@ const container = {
   alignItems: "center",
 };
 
-export const Auth = () => {
-    const dispatch = useDispatch();
-
+export const Home = () => {
   return (
     <div style={container}>
-      <h1>Auth Page</h1>
-      <button onClick={() => dispatch({type:'SIGN_IN'})}>Enter Site</button>
+      <h1>Home Page</h1>
     </div>
   );
 };

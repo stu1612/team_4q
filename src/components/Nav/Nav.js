@@ -1,15 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const Navigation = () => {
   return (
-    <nav>
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Training</li>
-        <li>Social</li>
-        <li>Contact</li>
-      </ul>
-    </nav>
+    <div>
+      <Link to="/">Home </Link>
+      <Link to="/about">About Us </Link>
+    </div>
   );
 };
