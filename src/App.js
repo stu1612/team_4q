@@ -1,17 +1,11 @@
 import React from "react";
-import { Navigation } from "./components/Nav/Nav";
-import { Main } from "./components/Main/Main";
-// import { AppContextProvider } from "./context/Context";
-// import { AppContext } from "./context/Context";
+import { Main } from "./pages/Main/Index";
+import { Auth } from "./pages/Auth/Auth";
 import { useSelector } from "react-redux";
 
 function App() {
   const isLogged = useSelector((state) => state.isLogged);
-  return (
-    <>
-    {isLogged ? <Main /> : <Navigation />}
-    </>
-    );
+  return <div>{isLogged ? <Main /> : <Auth />}</div>;
 }
 
 export default App;
