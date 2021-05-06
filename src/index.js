@@ -1,11 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import GlobalStyle from "./theme/GlobalStyle";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import { createStore } from "redux";
+import reducers from "./reducers/index";
+import { Provider } from "react-redux";
+
+let store = createStore(reducers);
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <GlobalStyle />
+      <App />
+    </Provider>
   </React.StrictMode>,
   document.getElementById("root")
 );
