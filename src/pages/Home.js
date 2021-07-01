@@ -1,17 +1,19 @@
 import React from "react";
+import styled from "styled-components";
 
-const container = {
-  height: "100vh",
-  width: "100vw",
-  display: "flex",
-  justifyContent: "center",
-  alignItems: "center",
-};
+const Section = styled.section`
+  min-height: 100vh;
+  background-color: yellow;
+`;
+const Container = styled.div``;
+const Title = styled.h1``;
 
 export const Home = () => {
   return (
-    <div style={container}>
-      <h1>Home Page</h1>
-    </div>
+    <Section>
+      <Container>
+        <Title></Title>
+      </Container>
+    </Section>
   );
 };

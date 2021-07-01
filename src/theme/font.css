@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "CustomBig";
+  src: local("CustomBig"), url("../assets//fonts/BIG\ JOHN.otf") format("otf");
+}
+@font-face {
+  font-family: "CustomSlim";
+  src: local("CustomSlim"), url("../assets/fonts/Slim\ Joe.otf") format("otf");
+}

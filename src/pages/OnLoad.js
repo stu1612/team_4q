@@ -1,21 +1,24 @@
 import React from "react";
-import { useDispatch } from "react-redux";
+// import { useDispatch } from "react-redux";
+import { VideoPlayer } from "../components/Video_Player/VideoPlayer";
+// import { Button } from "../components/Shared/Button";
+// import styled from "styled-components";
 
-const container = {
-  height: "100vh",
-  width: "100vw",
-  display: "flex",
-  justifyContent: "center",
-  alignItems: "center",
-};
+// const OnLoadBTN = styled(Button)`
+//   position: absolute;
+//   bottom: 20%;
+//   z-index: 5;
+//   pointer-events: auto;
+// `;
 
 export const OnLoad = () => {
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
 
   return (
-    <div style={container}>
-      <h1>Auth Page</h1>
-      <button onClick={() => dispatch({ type: "SIGN_IN" })}>Enter Site</button>
-    </div>
+    <>
+      <VideoPlayer />
+      {/* <OnLoadBTN onClick={() => dispatch({ type: "SIGN_IN" })}>Hello</OnLoadBTN> */}
+      {/* <OnLoadBTN onClick={handleClick}>Hello</OnLoadBTN> */}
+    </>
   );
 };

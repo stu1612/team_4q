@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "CustomBig";
+  src: local("CustomBig"),
+    url("./assets/fonts/BIG\ JOHN.otf") format("truetype");
+}
+@font-face {
+  font-family: "CustomSlim";
+  src: local("CustomSlim"),
+    url("./assets/fonts/Slim\ Joe.otf") format("truetype");
+}
+@font-face {
+  font-family: "Destruccion";
+  src: local("Destruccion"),
+    url("./assets/fonts/Destruccion-XAnG.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Uptown";
+  src: local("Uptown"), url("./assets/fonts/Uptown-KVrZ.ttf") format("truetype");
+}
