@@ -1,10 +1,8 @@
 import React from "react";
 import ReactPlayer from "react-player";
-import "./VideoPlayer.css";
-// eslint-disable-next-line no-unused-vars
-import { App_Button } from "../Shared/Button";
-// import styled from "styled-components";
+import { Button } from "../Shared/Button";
 import { motion } from "framer-motion";
+import "./VideoPlayer.css";
 
 import {
   Wrapper,
@@ -65,8 +63,7 @@ export const VideoPlayer = () => {
             );
           })}
         </Title>
-        {/* <Button onClick={() => dispatch({ type: "SIGN_IN" })}>Sign In</Button> */}
-        <App_Button title="sign in" onclick={navigateToMain} />
+        <Button onclick={navigateToMain} title="välkommen" />
       </ContentContainer>
     </Wrapper>
   );
